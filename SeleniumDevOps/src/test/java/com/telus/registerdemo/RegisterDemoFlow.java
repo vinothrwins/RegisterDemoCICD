@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -13,6 +15,7 @@ import org.testng.annotations.Test;
 public class RegisterDemoFlow {
 	
 	public WebDriver driver;
+	//public ChromeOptions options;
 	
 	// Parameterized all Input Values
 	String URL = "https://nxtgenaiacademy.com/";
@@ -64,13 +67,14 @@ public class RegisterDemoFlow {
 	
 	
 	@BeforeClass
-	public void launchApplication() {
-		
+	public void launchApplication() {		
+
 		// To Set System Property
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 
+		// Added code by Vinoth R	
 		// To Create Driver Object in Driver Interface
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(); 
 
 		// Launch the Home URL
 		driver.get(URL);
