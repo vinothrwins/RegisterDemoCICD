@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -15,7 +13,6 @@ import org.testng.annotations.Test;
 public class RegisterDemoFlow {
 	
 	public WebDriver driver;
-	//public ChromeOptions options;
 	
 	// Parameterized all Input Values
 	String URL = "https://nxtgenaiacademy.com/";
@@ -82,6 +79,7 @@ public class RegisterDemoFlow {
 		// To Maximize Window
 		driver.manage().window().maximize();
 		System.out.println("Application is launched");	
+		System.out.println("Continous testing is progress");
 	}
 	
 	@AfterClass
