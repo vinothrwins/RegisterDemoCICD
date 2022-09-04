@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 public class RegisterDemoFlow {
 	
+	// Code added by vinoth
 	public WebDriver driver;
 	
 	// Parameterized all Input Values
